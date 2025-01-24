@@ -1,5 +1,7 @@
 # Notoriun Self Registration
 
+Para testar a aplicação, acesse: [https://notoriunweb.ojostechnology.com](https://notoriunweb.ojostechnology.com)
+
 Sistema de auto-registro com verificação de email e localização geográfica.
 
 ## Funcionalidades Principais
