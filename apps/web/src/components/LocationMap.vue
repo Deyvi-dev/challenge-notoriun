@@ -245,7 +245,7 @@ const saveLocation = async () => {
       description: 'Localização salva com sucesso.',
     })
     emit('location-selected', locationPayload)
-    router.push('/dashboard')
+    router.push('/')
   } catch (error: any) {
     toast({
       variant: 'destructive',

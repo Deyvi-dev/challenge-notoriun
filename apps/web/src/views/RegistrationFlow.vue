@@ -243,7 +243,7 @@ const handleCompleteSubmit = async (values: Partial<FormData>) => {
 const handleLocationSubmit = (data: { latitude: number; longitude: number }) => {
   formData.value = { ...formData.value, ...data };
   completeStep(4);
-  router.push("/success");
+  router.push("/");
 };
 
 // Watch para impedir navegação direta para steps não habilitados
