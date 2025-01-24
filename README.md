@@ -153,6 +153,21 @@ pnpm build
 
 # Testes
 pnpm test
+
+### Database Migrations
+
+```bash
+# Generate a new migration
+pnpm --filter api migration:generate
+
+# Create a new empty migration
+pnpm --filter api migration:create
+
+# Run pending migrations
+pnpm --filter api migration:run
+
+# Revert last migration
+pnpm --filter api migration:revert
 ```
 
 ## Segurança
