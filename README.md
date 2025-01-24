@@ -1,6 +1,7 @@
 # Desafio Fullstack Notoriun
 
-Para testar a aplicação, acesse: [https://notoriunweb.ojostechnology.com](https://notoriunweb.ojostechnology.com)
+## Para testar a aplicação, acesse: [https://notoriunweb.ojostechnology.com](https://notoriunweb.ojostechnology.com)
+![image](https://github.com/user-attachments/assets/2e4166bb-5f72-4a1e-896a-83f6593372c5)
 
 Desafio Fullstack para empresa Notoriun - Sistema de auto-registro com verificação de email e localização geográfica.
 
