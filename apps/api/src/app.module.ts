@@ -16,7 +16,7 @@ import { HashingModule } from './hashing/hashing.module';
     MailerModule.forRoot({
       transport: {
         host: process.env.EMAIL_HOST,
-        secure: false,
+        secure: process.env.EMAIL_SECURE === 'true' || false,
         auth: {
           user: process.env.EMAIL_USERNAME,
           pass: process.env.EMAIL_PASSWORD,
