@@ -7,7 +7,7 @@ export class CustomMailerService {
 
   sendVerificationEmail(email: string, verificationCode: string) {
     return this.mailService.sendMail({
-      from: 'teste <testeemail@example.com>',
+      from: `contact <${process.env.EMAIL_FROM}>`,
       to: email,
       subject: `Email Verification Code`,
       template: './verification',

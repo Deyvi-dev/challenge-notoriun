@@ -104,10 +104,11 @@ DATABASE_USERNAME=user
 DATABASE_PASSWORD=password
 DATABASE_NAME=mydatabase
 JWT_SECRET=your_jwt_secret
-SMTP_HOST=smtp.example.com
-SMTP_PORT=587
-SMTP_USER=user
-SMTP_PASS=password
+EMAIL_HOST=localhost
+EMAIL_PORT=1025
+EMAIL_USERNAME=test@example
+EMAIL_PASSWORD=test123
+EMAIL_SECURE=false
 ```
 
 #### Frontend (.env)

@@ -22,6 +22,10 @@ import { HashingModule } from './hashing/hashing.module';
           pass: process.env.EMAIL_PASSWORD,
         },
         port: process.env.EMAIL_PORT as unknown as number,
+        tls: {
+          rejectUnauthorized: false,
+          minVersion: 'TLSv1.2',
+        },
       },
       template: {
         dir: join(__dirname, 'templates', 'emails'),
