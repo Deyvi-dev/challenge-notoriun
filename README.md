@@ -1,8 +1,8 @@
-# Notoriun Self Registration
+# Desafio Fullstack Notoriun
 
 Para testar a aplicação, acesse: [https://notoriunweb.ojostechnology.com](https://notoriunweb.ojostechnology.com)
 
-Sistema de auto-registro com verificação de email e localização geográfica.
+Desafio Fullstack para empresa Notoriun - Sistema de auto-registro com verificação de email e localização geográfica.
 
 ## Funcionalidades Principais
 
