@@ -4,6 +4,8 @@
 ![image](https://github.com/user-attachments/assets/2e4166bb-5f72-4a1e-896a-83f6593372c5)
 
 Desafio Fullstack para empresa Notoriun - Sistema de auto-registro com verificação de email e localização geográfica.
+## Video Demonstrativo
+Para ver uma demonstração de como rodar o projeto localmente, acesse: [https://drive.google.com/file/d/1eSw0b_dEOpiHqDpzwHZXjYzj6TtTXgZo/view?usp=sharing](https://drive.google.com/file/d/1eSw0b_dEOpiHqDpzwHZXjYzj6TtTXgZo/view?usp=sharing)
 
 ## Funcionalidades Principais
 
