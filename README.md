@@ -95,7 +95,20 @@ Desafio Fullstack para empresa Notoriun - Sistema de auto-registro com verifica�
 - Docker e Docker Compose
 - PostgreSQL
 
-### Variáveis de Ambiente
+### Instalação
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/Deyvi-dev/challenge-notoriun
+cd challenge-notoriun
+```
+
+2. Instale as dependências:
+```bash
+pnpm install
+```
+
+3. Configure as variáveis de ambiente:
 
 #### Backend (.env)
 ```env
@@ -118,28 +131,9 @@ EMAIL_FROM=test@example
 VITE_API_URL=http://localhost:3000
 ```
 
-### Instalação
-
-1. Clone o repositório:
-```bash
-git clone <repository-url>
-cd notoriun-self-registration
-```
-
-2. Instale as dependências:
-```bash
-pnpm install
-```
-
-3. Configure as variáveis de ambiente:
-```bash
-cp apps/api/.env.example apps/api/.env
-cp apps/web/.env.example apps/web/.env
-```
-
 4. Inicie os containers:
 ```bash
-docker-compose up -d
+docker compose -f docker-compose.dev.yml  up -d
 ```
 
 ### Desenvolvimento
@@ -172,11 +166,6 @@ pnpm dev
 ### Database Migrations
 
 ```bash
-# Generate a new migration
-pnpm --filter api migration:generate
-
-# Create a new empty migration
-pnpm --filter api migration:create
 
 # Run pending migrations
 pnpm --filter api migration:run
