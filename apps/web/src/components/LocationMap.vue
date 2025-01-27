@@ -246,6 +246,7 @@ const saveLocation = async () => {
     })
     emit('location-selected', locationPayload)
     router.push('/')
+    window.location.href = '/'
   } catch (error: any) {
     toast({
       variant: 'destructive',
