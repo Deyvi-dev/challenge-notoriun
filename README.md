@@ -151,7 +151,7 @@ pnpm dev
 
 # Desenvolvimento específico
 pnpm --filter web dev
-pnpm --filter api dev
+pnpm --filter api start:dev
 
 # Build
 pnpm build
