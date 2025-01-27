@@ -101,9 +101,9 @@ Desafio Fullstack para empresa Notoriun - Sistema de auto-registro com verifica√
 ```env
 DATABASE_HOST=localhost
 DATABASE_PORT=5432
-DATABASE_USERNAME=user
-DATABASE_PASSWORD=password
-DATABASE_NAME=mydatabase
+DATABASE_USERNAME=postgres
+DATABASE_PASSWORD=postgres
+DATABASE_NAME=postgres
 JWT_SECRET=your_jwt_secret
 EMAIL_HOST=localhost
 EMAIL_PORT=1025
