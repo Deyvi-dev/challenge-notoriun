@@ -110,6 +110,7 @@ EMAIL_PORT=1025
 EMAIL_USERNAME=test@example
 EMAIL_PASSWORD=test123
 EMAIL_SECURE=false
+EMAIL_FROM=test@example
 ```
 
 #### Frontend (.env)
