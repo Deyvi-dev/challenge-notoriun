@@ -46,7 +46,7 @@ export class UsersController {
     @Request() req: RequestWithUser,
     @Body() updateUserDto: UpdateUserDto,
   ) {
-    const { id } = req.user;
+    const { sub: id } = req.user;
     return this.usersService.update(id, updateUserDto);
   }
 
@@ -56,7 +56,7 @@ export class UsersController {
     @Request() req: RequestWithUser,
     @Body() updateLocationDto: UpdateLocationDto,
   ) {
-    const { id } = req.user;
+    const { sub: id } = req.user;
     return this.usersService.updateLocation(id, updateLocationDto);
   }
 

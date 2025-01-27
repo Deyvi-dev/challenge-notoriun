@@ -116,7 +116,6 @@ EMAIL_FROM=test@example
 #### Frontend (.env)
 ```env
 VITE_API_URL=http://localhost:3000
-VITE_ARCGIS_API_KEY=your_arcgis_key
 ```
 
 ### Instalação
@@ -145,19 +144,30 @@ docker-compose up -d
 
 ### Desenvolvimento
 
+1. Primeiro, execute as migrações do banco de dados:
 ```bash
-# Desenvolvimento de todos os pacotes
-pnpm dev
 
-# Desenvolvimento específico
+# Execute as migrações pendentes
+
+pnpm --filter api migration:run
+
+```
+
+2. Inicie os serviços:
+```bash
+# Desenvolvimento do frontend
 pnpm --filter web dev
-pnpm --filter api dev
 
-# Build
-pnpm build
+# Desenvolvimento do backend (em outro terminal)
+pnpm --filter api start:dev
 
-# Testes
-pnpm test
+# Ou para rodar todos os serviços simultaneamente
+pnpm dev
+```
+
+3. Acesse:
+- Frontend: http://localhost:5173
+- Backend: http://localhost:3000
 
 ### Database Migrations
 

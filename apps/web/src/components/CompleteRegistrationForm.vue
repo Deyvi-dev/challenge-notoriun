@@ -159,8 +159,8 @@ const isLoadingCep = ref(false)
 const { toast } = useToast()
 
 const schema = toTypedSchema(z.object({
-  cnpj: z.string().min(18, "CNPJ inválido"),
-  cep: z.string().min(9, "CEP inválido"),
+  cnpj: z.string().min(10, "CNPJ inválido"),
+  cep: z.string().min(6, "CEP inválido"),
   state: z.string().min(1, "Estado é obrigatório"),
   city: z.string().min(1, "Cidade é obrigatória"),
   neighborhood: z.string().min(1, "Bairro é obrigatório"),
